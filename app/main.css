@@ -1,0 +1,103 @@
+:root {
+    --back-color: #e7e0d8;
+    --dark-color: #25414f;
+    --main-color: #19c8fa;
+    --secondary-color: #fdfdfd;
+    --accent-color: #4caf50; /* لون مميز أخضر */
+    --highlight-color: #ff4081; /* لون وردي مميز */
+    --info-color: #ffeb3b; /* لون أصفر */
+    --main-transition: 0.3s;
+}
+
+/* الوضع المظلم */
+body.dark-mode {
+    --back-color: #181818;
+    --dark-color: #ffffff;
+    --main-color: #19c8fa;
+    --secondary-color: #282828;
+    --accent-color: #66bb6a; /* لون أخضر فاتح للوضع المظلم */
+    --highlight-color: #f50057; /* لون وردي قاتم */
+    --info-color: #ffc107; /* لون أصفر فاتح */
+}
+
+/* تنسيقات الجسم */
+body {
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--back-color);
+    transition: background-color var(--main-transition), color var(--main-transition);
+}
+
+/* الشريط العلوي للتنقل */
+header {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: var(--secondary-color);
+    transition: color var(--main-transition);
+}
+
+header nav ul li a:hover {
+    color: var(--highlight-color); /* لون مميز عند التمرير */
+}
+
+/* الصفحة الرئيسية */
+.face {
+    padding: 50px;
+    text-align: center;
+    background: var(--highlight-color); /* لون الواجهة */
+    color: var(--secondary-color);
+}
+
+.face h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.face p {
+    font-size: 1.2rem;
+}
+
+/* قسم الخدمات */
+.services {
+    padding: 50px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.service {
+    margin: 20px;
+    padding: 20px;
+    background: var(--info-color); /* لون معلومات */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* قسم المشاريع السابقة */
+#projects h2 {
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+.project {
+    background-color: var(--secondary-color);
+    border: 1px solid #ddd;
+    transition: background-color var(--main-transition), border-color var(--main-transition);
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    transition: background-color var(--main-transition);
+}
