@@ -111,6 +111,9 @@ body {
     line-height: 2;
     margin: 0 auto 100px;
 }
+.txt-color{
+    color: var(--txt-color) !important;
+}
 /* ************************************** */
 /* end adds */
 /* start nav-bar */
@@ -126,6 +129,9 @@ body {
 }
 .nvaigation-bar li a{
     color: var(--txt-color) !important;
+}
+.lists{
+    background-color: var(--secondary-color);
 }
 /* end nav-bar */
 /* start Landing  */

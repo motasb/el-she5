@@ -22,8 +22,8 @@ export default function NavBar(){
           <Link href="#services" className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
             الخدمات
           </Link>
-          <ul className="dropdown-menu">
-            <li><Link href="/electricity" className="dropdown-item" >الكهرباء</Link></li>
+          <ul className="dropdown-menu lists">
+            <li><Link href="/electricity" className="dropdown-item " >الكهرباء</Link></li>
             {/* <li><Link href="#" className="dropdown-item" >Another action</Link></li>
             <li><hr className="dropdown-divider"/></li>
             <li><Link className="dropdown-item" href="#about">Something else here</Link></li> */}
